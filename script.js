@@ -16,6 +16,17 @@ console.log(url)
 
 window.open(url, '_blank')
 
-
-    
 }
+
+
+const menuAbrir = document.getElementById('abrir-menu')
+const menu = document.getElementById('menu-mobile')
+
+menuAbrir.addEventListener('click', () => {
+    menu.classList.add('abrir-menu')
+})
+
+menu.addEventListener('click', () => {
+    menu.classList.remove('abrir-menu')
+})
+
